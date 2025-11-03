@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="120">
+  <rect width="100%" height="100%" fill="white"/>
+  <g transform="translate(20,10)">
+    <circle cx="50" cy="50" r="40" fill="#0aa79a"/>
+    <path d="M20 60 L40 30 L60 50 L80 20 L100 60" stroke="#ff7a00" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <text x="130" y="60" font-family="Verdana" font-size="28" fill="#0a6f6a">Metrocity</text>
+    <text x="130" y="90" font-family="Verdana" font-size="16" fill="#ff7a00">Health Care</text>
+  </g>
+</svg>

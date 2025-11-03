@@ -1,0 +1,51 @@
+
+/* assets/css/style.css - Teal / Orange theme */
+:root{
+  --teal: #0aa79a;
+  --dark-teal: #0a6f6a;
+  --orange: #ff7a00;
+  --muted: #6b7280;
+  --max-width: 1100px;
+}
+*{box-sizing:border-box}
+body{font-family:Inter,Segoe UI,Helvetica,Arial,sans-serif;margin:0;color:#133;line-height:1.5;background:#fbfbfb}
+.header{background:linear-gradient(90deg,var(--teal),#17b3a0);color:white;padding:18px 0;box-shadow:0 2px 6px rgba(10,10,10,0.06)}
+.container{max-width:var(--max-width);margin:0 auto;padding:0 18px}
+.nav{display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{height:56px}
+.navlinks{display:flex;gap:14px;align-items:center}
+.navlinks a{color:white;text-decoration:none;font-weight:600}
+.cta{background:var(--orange);color:white;padding:8px 12px;border-radius:8px;text-decoration:none;font-weight:700}
+
+/* Hero */
+.hero{display:flex;gap:28px;align-items:center;padding:48px 0}
+.hero .left{flex:1}
+.hero h1{font-size:34px;margin:0 0 10px;color:var(--dark-teal)}
+.hero p{margin:0 0 18px;color:var(--muted)}
+.hero .quick{display:flex;gap:12px;align-items:center}
+.hero .phone{background:white;padding:10px 14px;border-radius:10px;box-shadow:0 2px 10px rgba(10,10,10,0.06);font-weight:700}
+.hero .hero-img{flex:1;text-align:right}
+.hero .hero-img img{max-width:100%;border-radius:10px;box-shadow:0 6px 20px rgba(10,10,10,.08)}
+
+/* Sections */
+.section{padding:36px 0;border-top:1px solid #f0f0f0;background:white}
+.section h2{color:var(--dark-teal);margin-bottom:12px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.card{background:#fff;padding:18px;border-radius:10px;box-shadow:0 6px 18px rgba(10,10,10,0.04)}
+.card h3{margin:0 0 8px;color:var(--teal)}
+
+/* Footer */
+.footer{background:#072; color:white;padding:20px 0;margin-top:28px}
+.footer a{color:lightblue}
+
+/* Gallery */
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.gallery img{width:100%;height:160px;object-fit:cover;border-radius:8px}
+
+/* Responsive */
+@media(max-width:800px){
+  .hero{flex-direction:column;text-align:center}
+  .hero .hero-img{text-align:center}
+  .navlinks{display:none}
+}
